@@ -1,4 +1,5 @@
-export const constants = {
+
+export const Constants = {
   font: 'sans-serif',
   size: {
     small: '12px',
