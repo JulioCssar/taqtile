@@ -1,21 +1,21 @@
 import { InputHTMLAttributes } from 'react';
-import { colors } from '../typography/colors';
+import { theme } from '../typography/theme';
 import './input.css';
+import { Label } from '../typography/label/typography';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
- label: string;
- error ?: boolean;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  error?: boolean;
 }
 
-export function Input({error, label}: InputProps) {
+export function Input({ error, label }: InputProps) {
   const inputStyle = {
-    borderColor: error ? colors.statesError : colors.baseGray,
-
+    borderColor: error ? theme.statesError : theme.baseGray,
   };
   return (
     <div className='container-input'>
-      <label>{label}</label>
-      <input style={inputStyle} className='input'/>
+      <Label>{label}</Label>
+      <input style={inputStyle} className='input' />
     </div>
   );
 }

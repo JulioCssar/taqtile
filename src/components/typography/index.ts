@@ -1,6 +1,8 @@
-
 export const Constants = {
-  font: 'sans-serif',
+  fonts: {
+    fontDefault: 'sans-serif',
+    fontSecundary: 'Franklin Gothic Medium',
+  },
   size: {
     small: '12px',
     medium: '14px',
