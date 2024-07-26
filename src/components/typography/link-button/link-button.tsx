@@ -9,7 +9,7 @@ interface LinkButtonProps {
 const LinkButtonStyle = {
   fontWeight: Constants.weight.regular,
   fontSize: Constants.size.medium,
-  color: theme.brandPrimary,
+  color: theme.brandSecondary,
   fontFamily: Constants.fonts.fontSecundary,
 };
 
