@@ -6,12 +6,11 @@ interface LabelProps {
   error?: string;
 }
 
-
 export function Label({ children, error }: LabelProps) {
   const LabelStyle = {
     fontFamily: Constants.fonts.fontSecundary,
     fontSize: Constants.size.medium,
-    color: error ? theme.statesError: theme.brandPrimary,
+    color: error ? theme.statesError : theme.brandPrimary,
     fontWeight: Constants.weight.regular,
   };
   return (
